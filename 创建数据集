@@ -18,3 +18,5 @@ mymatrix <- matrix(cells, nrow=3, ncol=2, byrow=TRUE, dimnames=list(rnames, cnam
 mymatrix[2,] #选择矩阵中的第2行元素
 mymatrix[,1] #选择矩阵中的第1列元素
 mymatrix[2,1] #选择矩阵中的第2行第1列的元素
+#数组
+#myarray <- array(数据, 数值型向量, 各维度名称标签列表)
