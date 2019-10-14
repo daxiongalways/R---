@@ -1,0 +1,20 @@
+#创建数据集的两步：选择一个数据结构来储存数据；将数据输入数据结构中。
+#标量
+a <- 3 #数值型标量
+b<- "china" #字符型标量
+c <- TRUE #逻辑型标量
+#向量
+a <- c(1,2,3,4) #数值型向量
+A <- c(1:4) #数值序列
+b <- c("one", "two", three") #字符型向量
+c <- c(TRUE, FALSE, TRUE) #逻辑型向量
+#矩阵
+#mymatrix <- matrix(矩阵的元素, nrow=行数, ncol=列数, byrow=按行填充TRUE或按列填充FALSE, dimnames=list(字符型向量行名, 字符型向量列名))
+#实例：
+cells <- c(10.3, 24.5, 35, 45, 25.6, 6.4)
+cnames <- c("NC", "sh")
+rnames <- c("0h", "24h", "48h")
+mymatrix <- matrix(cells, nrow=3, ncol=2, byrow=TRUE, dimnames=list(rnames, cnames))
+mymatrix[2,] #选择矩阵中的第2行元素
+mymatrix[,1] #选择矩阵中的第1列元素
+mymatrix[2,1] #选择矩阵中的第2行第1列的元素
